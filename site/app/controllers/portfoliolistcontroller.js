@@ -1,0 +1,291 @@
+portfolioApp.controller('PortfolioListController', function( $scope ) {
+
+	$scope.portfolios = [
+
+	{name: '0331',
+	title: 'Hoboken Train Station',
+	date: '02-08-2015',
+	description: 'The Hoboken train station during a winter storm.',
+	imageurl: 'IMG_0331_small.JPG',
+	imageurl_large: 'IMG_0331.JPG'},
+
+	{name: '0802',
+	title: 'Hoboken Train Station',
+	date: '07-08-2015',
+	description: 'The Hoboken Train Station before a rain storm.',
+	imageurl: 'IMG_0802_small.JPG',
+	imageurl_large: 'IMG_0802.JPG'},
+
+	{name: '0337',
+	title: 'Hoboken Train Station',
+	date: '02-16-2015',
+	description: 'The fish estuary next to the Hoboken train station in winter.',
+	imageurl: 'IMG_0337_small.JPG',
+	imageurl_large: 'IMG_0337.JPG'},
+
+	{name: '0312',
+	title: 'Midtown Manhattan',
+	date: '01-27-2015',
+	description: 'Midtown Manhattan with a view of the Empire State Building.',
+	imageurl: 'IMG_0312_small.JPG',
+	imageurl_large: 'IMG_0312.JPG'},
+
+	{name: '0466',
+	title: 'Midtown Manhattan',
+	date: '05-08-2015',
+	description: 'Midtown Manhattan with a view of the Empire State Building at night.',
+	imageurl: 'IMG_0466_small.JPG',
+	imageurl_large: 'IMG_0466.JPG'},
+
+	{name: '0493',
+	title: 'Empire State Building',
+	date: '05-08-2015',
+	description: 'The Empire State Building in colors.',
+	imageurl: 'IMG_0493_small.JPG',
+	imageurl_large: 'IMG_0493_copy.JPG'},
+
+	{name: '0529',
+	title: 'Fireworks',
+	date: '07-04-2015',
+	description: 'Macy\'s fireworks on the 4th of July.',
+	imageurl: 'IMG_0529_small.JPG',
+	imageurl_large: 'IMG_0529.JPG'},
+
+	{name: '0576',
+	title: 'Fireworks',
+	date: '07-04-2015',
+	description: 'More Macy\'s fireworks on the 4th of July.',
+	imageurl: 'IMG_0576_small.JPG',
+	imageurl_large: 'IMG_0576.JPG'},
+
+	{name: '0583',
+	title: 'Promenade',
+	date: '07-08-2015',
+	description: 'The promenade behind Laguna.',
+	imageurl: 'IMG_0583_small.JPG',
+	imageurl_large: 'IMG_0583.JPG'},
+
+	{name: '0590',
+	title: 'Promenade',
+	date: '07-08-2015',
+	description: 'The promenade behind Laguna with a view of the Freedom Tower.',
+	imageurl: 'IMG_0590_small.JPG',
+	imageurl_large: 'IMG_0590.JPG'},
+
+	{name: '0597',
+	title: 'Wildlife',
+	date: '07-08-2015',
+	description: 'Three Canadian Geese.',
+	imageurl: 'IMG_0597_small.JPG',
+	imageurl_large: 'IMG_0597.JPG'},
+
+	{name: '0600',
+	title: 'Promenade',
+	date: '07-08-2015',
+	description: 'The promenade behind Aquablu.',
+	imageurl: 'IMG_0600_small.JPG',
+	imageurl_large: 'IMG_0600.JPG'},
+
+	{name: '0602',
+	title: 'Downtown Manhattan',
+	date: '07-08-2015',
+	description: 'A view of the Freedom Tower and surrounding buildings from behind Aquablu at Newport.',
+	imageurl: 'IMG_0602_small.JPG',
+	imageurl_large: 'IMG_0602_copy.JPG'},
+
+	{name: '0603',
+	title: 'Midtown Manhattan',
+	date: '07-08-2015',
+	description: 'Midtown Manhattan with a view of the Hudson River and the Empire State Building.',
+	imageurl: 'IMG_0603_small.JPG',
+	imageurl_large: 'IMG_0603.JPG'},
+
+	{name: '0609',
+	title: 'Aquablu',
+	date: '07-08-2015',
+	description: 'The Aquablu at Newport.',
+	imageurl: 'IMG_0609_small.JPG',
+	imageurl_large: 'IMG_0609_copy.JPG'},
+
+	{name: '0628',
+	title: 'Community Garden',
+	date: '07-08-2015',
+	description: 'Barcelona marigolds in the community garden.',
+	imageurl: 'IMG_0628_small.JPG',
+	imageurl_large: 'IMG_0628.JPG'},
+
+	{name: '0637',
+	title: 'Community Garden',
+	date: '07-08-2015',
+	description: 'White lilies in the community garden.',
+	imageurl: 'IMG_0637_small.JPG',
+	imageurl_large: 'IMG_0637_copy.JPG'},
+
+	{name: '0639',
+	title: 'Community Garden',
+	date: '07-08-2015',
+	description: 'A flower bed in the community garden.',
+	imageurl: 'IMG_0639_small.JPG',
+	imageurl_large: 'IMG_0639.JPG'},
+
+	{name: '0640',
+	title: 'Community Garden',
+	date: '07-08-2015',
+	description: 'A sunflower in the community garden.',
+	imageurl: 'IMG_0640_small.JPG',
+	imageurl_large: 'IMG_0640.JPG'},
+
+	{name: '0648',
+	title: 'Community Garden',
+	date: '07-08-2015',
+	description: 'Hydrangea in the community garden.',
+	imageurl: 'IMG_0648_small.JPG',
+	imageurl_large: 'IMG_0648.JPG'},
+
+	{name: '0651',
+	title: 'East Hampton',
+	date: '07-08-2015',
+	description: 'The East Hampton at Newport.',
+	imageurl: 'IMG_0651_small.JPG',
+	imageurl_large: 'IMG_0651_copy.JPG'},
+
+	{name: '0653',
+	title: 'Pacific',
+	date: '07-08-2015',
+	description: 'The Pacific at Newport.',
+	imageurl: 'IMG_0653_small.JPG',
+	imageurl_large: 'IMG_0653_copy.JPG'},
+
+	{name: '0660',
+	title: 'Freedom Tower',
+	date: '07-08-2015',
+	description: 'A view of the Freedom Tower from behind the East Hampton at Newport.',
+	imageurl: 'IMG_0660_small.JPG',
+	imageurl_large: 'IMG_0660.JPG'},
+
+	{name: '0665',
+	title: 'Atlantic',
+	date: '07-08-2015',
+	description: 'The Atlantic at Newport.',
+	imageurl: 'IMG_0665_small.JPG',
+	imageurl_large: 'IMG_0665_copy.JPG'},
+
+	{name: '0672',
+	title: 'River Court',
+	date: '07-08-2015',
+	description: 'The three flags at River Court.',
+	imageurl: 'IMG_0672_small.JPG',
+	imageurl_large: 'IMG_0672.JPG'},
+
+	{name: '0677',
+	title: 'Promenade',
+	date: '07-08-2015',
+	description: 'The promenade behind the Atlantic at Newport with a view of the Freedom Tower.',
+	imageurl: 'IMG_0677_small.JPG',
+	imageurl_large: 'IMG_0677.JPG'},
+
+	{name: '0682',
+	title: 'Roses',
+	date: '07-08-2015',
+	description: 'A sample of the roses found behind the Atlantic at Newport.',
+	imageurl: 'IMG_0682_small.JPG',
+	imageurl_large: 'IMG_0682.JPG'},
+
+	{name: '0706',
+	title: 'The Lighthouse',
+	date: '07-08-2015',
+	description: 'The Lighthouse behind the Atlantic at Newport.',
+	imageurl: 'IMG_0706_small.JPG',
+	imageurl_large: 'IMG_0706_copy.JPG'},
+
+	{name: '0714',
+	title: 'Riverside',
+	date: '07-08-2015',
+	description: 'The Riverside at Newport.',
+	imageurl: 'IMG_0714_small.JPG',
+	imageurl_large: 'IMG_0714_copy.JPG'},
+
+	{name: '0721',
+	title: 'Marina',
+	date: '07-08-2015',
+	description: 'Some boats docked at the Newport Yacht Club and Marina.',
+	imageurl: 'IMG_0721_small.JPG',
+	imageurl_large: 'IMG_0721_copy.JPG'},
+
+	{name: '0732',
+	title: 'Freedom Tower',
+	date: '07-08-2015',
+	description: 'A view of the Freedom Tower and the Newport Yacht Club and Marina.',
+	imageurl: 'IMG_0732_small.JPG',
+	imageurl_large: 'IMG_0732_copy.JPG'},
+
+	{name: '0480',
+	title: 'Freedom Tower',
+	date: '05-08-2015',
+	description: 'The Freedom Tower at twilight.',
+	imageurl: 'IMG_0480_small.JPG',
+	imageurl_large: 'IMG_0480.JPG'},
+
+	{name: '0509',
+	title: 'Freedom Tower',
+	date: '05-08-2015',
+	description: 'The Freedom Tower at night.',
+	imageurl: 'IMG_0509_small.JPG',
+	imageurl_large: 'IMG_0509_copy.JPG'},
+
+	{name: '0737',
+	title: 'Marina',
+	date: '07-08-2015',
+	description: 'A big boat docked at the Newport Yacht Club and Marina.',
+	imageurl: 'IMG_0737_small.JPG',
+	imageurl_large: 'IMG_0737.JPG'},
+
+	{name: '0748',
+	title: 'Town Square',
+	date: '07-08-2015',
+	description: 'The Town Square.',
+	imageurl: 'IMG_0748_small.JPG',
+	imageurl_large: 'IMG_0748.JPG'},
+
+	{name: '0781',
+	title: 'Laguna',
+	date: '07-08-2015',
+	description: 'The Laguna at Newport.',
+	imageurl: 'IMG_0781_small.JPG',
+	imageurl_large: 'IMG_0781_copy.JPG'},
+
+	{name: '0785',
+	title: 'The Carousel',
+	date: '07-08-2015',
+	description: 'The carousel at Newport Green Park.',
+	imageurl: 'IMG_0785_small.JPG',
+	imageurl_large: 'IMG_0785.JPG'}
+
+	];
+
+	$scope.favorites = [];
+	$scope.add_favorite_error_msg = '';
+
+	$scope.addFavorite = function (new_favorite) {
+		if ( new_favorite.id < 1 || new_favorite.id > 37) {
+			$scope.add_favorite_error_msg = 'Invalid id. Please pick an id between 0 and 36.';
+		} else if ( $scope.portfolios[new_favorite.id - 1].picked ) {
+			$scope.add_favorite_error_msg = '#' + new_favorite.id + ' is already in your favorites. Please pick another photo.';
+			$scope.favorite = {};
+		} else {
+			$scope.favorites.push($scope.portfolios[new_favorite.id - 1]);
+			$scope.favorite = {};
+			$scope.add_favorite_error_msg = '';
+			$scope.portfolios[new_favorite.id - 1].picked = true;
+		}
+	};
+
+	$scope.getPickedStatus = function (index) {
+		if ( $scope.portfolios[index].picked == true ) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+		
+});

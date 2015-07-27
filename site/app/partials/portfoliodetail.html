@@ -1,0 +1,20 @@
+<div class="wrapper">
+	<header class="masthead">
+		<nav>
+			<span><--- <a href="index.html#/portfolios">Back to list of photographs</a></span>
+		</nav>
+	</header>
+	<main>
+		<div class="alert" ng-show="load_error_msg" ng-bind="load_error_msg"></div>
+		<article class="panel-large" ng-show="!load_error_msg">
+			<h1 ng-bind="portfolio.title"></h1>
+			<dl>
+				<dt>Date Taken:</dt>
+				<dd>{{portfolio.date}}</dd>
+				<dt>Description:</dt>
+				<dd>{{portfolio.description}}</dd>
+			</dl>
+			<img ng-src="images/{{portfolio.imageurl_large}}" alt="{{portfolio.title}}" />
+		</article>
+	</main>
+</div>

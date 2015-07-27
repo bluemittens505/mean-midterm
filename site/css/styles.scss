@@ -1,0 +1,241 @@
+$divider: 0.5em;
+$padding: 0.5em;
+$margin: 1em;
+$border: 0.1em;
+$radius: 0.5em;
+$darkgreen: #360;
+$grassgreen: #5C8533;
+$white: #fff;
+$black: #000;
+$beige: #EBE0CC;
+$gray: #999;
+$warning: #F93;
+$orange: #FC0;
+$break1: 30em;
+$break2: 48em;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+	color: $black;
+	font-family: "Trebuchet MS", "Lucida Grande", "lucida sans unicode", sans-serif;
+}
+.wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 0 $padding;
+
+	@media only screen and (min-width: $break2) {
+		border: $border solid $darkgreen;
+		border-radius: $radius;
+		background-color: $beige;
+		&:after {
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+	}
+}
+.masthead {
+	border-top: $divider solid $darkgreen;
+	border-bottom: $divider solid $darkgreen;
+	margin-top: $margin;
+	padding: $padding 0;
+
+	@media only screen and (min-width: $break2) {
+		background: url(../images/IMG_0640_small.JPG) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		border-radius: $radius;
+	}
+
+	h1 {
+		font-family: 'Bangers', cursive;
+		font-size: 2.5em;
+		text-align: center;
+	}
+	h2 {
+		font-size: 1em;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		&:hover, &:focus {
+			background-color: $darkgreen;
+			color: $white;
+		}
+	}
+}
+aside {
+	border-bottom: $divider solid $darkgreen;
+	padding: $padding 0;
+
+	@media only screen and (min-width: $break2) {
+    	border-bottom: none;
+    	float: left;
+    	width: 40%;
+    	padding: $padding;
+    	box-sizing: border-box;
+    	margin: $margin 0;
+    }
+
+	.alert {
+		color: $warning;
+	}
+	form {
+		padding: $padding 0;
+		fieldset {
+			border-radius: $radius;
+			legend {
+				font-weight: bold;
+			}
+	        .fields {
+	            padding: $padding;
+	            .row {
+	            	padding: $padding 0;
+	                clear: left;
+	                height: 2em;
+
+	                @media only screen and (min-width: $break1) {
+                    	clear: none;
+                    	max-width: 40%;
+                    	float: left;
+                    	margin-right: $margin;
+		        	}
+
+		        	@media only screen and (min-width: $break2) {
+                    	clear: left;
+                    	max-width: 100%;
+                    	float: none;
+                    	margin: 0;
+		        	}
+
+		            label {
+	                    cursor: pointer;
+	                    float: left;
+	                    padding-right: $padding;
+	                    line-height: 2em;
+		            }
+		            input[type=number] {
+	                    font-size: inherit;
+	                    color: $black;
+	                    width: 8em;
+	                    float: left;
+	                    line-height: 2em;
+	                    border-radius: $radius;
+	                }
+	                input[type=number]:focus {
+	                	outline-color: $darkgreen;
+	                	outline-width: 0.4em;
+	                }
+	                input[type=submit] {
+	                	width: 8em;
+						background: linear-gradient(to bottom, rgb(51,102,0) 0%,rgb(194,209,178) 100%); /* W3C */
+                        border-radius: 0.5em;
+                        color: black;
+                        font-size: inherit;
+                        line-height: 2em;
+                    }
+                    input[type=submit]:disabled {
+                    	opacity: 0.5;
+                    }
+		        }
+		        &:after {
+					content: ".";
+					display: block;
+					height: 0;
+					clear: both;
+					visibility: hidden;
+				}
+	        }
+        }
+    }
+    h3, p {
+    	padding: $padding 0;
+    }
+    .thumbnail {
+    	padding: $padding 0;
+    	img {
+    		max-width: 60%;
+    		max-height: 12em;
+    		box-shadow: 0.25em 0.25em 0.3em $gray;
+    	}
+    }
+}
+main {
+	padding: $padding 0;
+
+	@media only screen and (min-width: $break2) {
+    	float: left;
+    	width: 60%;
+    	border-left: $divider solid $darkgreen;
+    	padding: $padding;
+    	box-sizing: border-box;
+    	margin: $margin 0;
+    }
+
+	.panel {
+		border: $border solid $orange;
+		border-radius: $radius;
+		margin: $margin 0;
+		box-shadow: 0.25em 0.25em 0.3em $gray;
+
+		@media only screen and (min-width: $break2) {
+			box-sizing: border-box;
+			float: left;
+			max-width: 45%;
+			margin: $margin/2;
+		}
+
+		.panel-heading {
+			background-color: $orange;
+			font-size: 1.1em;
+			padding: $padding;
+			text-align: center;
+			a {
+				text-decoration: none;
+				color: $black;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+		.panel-body {
+			padding: $padding;
+			img {
+				width: 100%;
+
+				@media only screen and (min-width: $break2) {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.panel-large {
+		dl {
+			clear: both;
+	  	}
+	  	dt {
+	  		float: left;
+	  		clear: left;
+	  		font-weight: bold;
+	  		padding-right: $padding;
+	  	}
+	  	dd {
+	  		float: left;
+	  	}
+		img {
+			box-sizing: border-box;
+			margin: $margin/2 0;
+			max-width: 100%;
+			box-shadow: 0.25em 0.25em 0.3em $gray;
+		}
+	}
+}

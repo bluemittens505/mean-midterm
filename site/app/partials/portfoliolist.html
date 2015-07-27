@@ -1,0 +1,44 @@
+<div class="wrapper">
+	<header class="masthead">	
+		<h2>Pick your favorite photos taken in</h2>
+		<h1>Newport, New Jersey</h1>
+	</header>
+	<aside>
+		<div class="alert" ng-show="add_favorite_error_msg" ng-bind="add_favorite_error_msg"></div>
+		<form ng-submit="addFavorite(favorite)" name="favorite_form" novalidate>
+			<fieldset>
+				<legend>Enter the photo id</legend>
+				<div class="fields">
+					<div class="row">
+						<label for="f-id">Id</label> 
+						<input type="number" id="f-id" name="id" ng-model="favorite.id" min="1" max="37" placeholder="1 through 37" required />
+					</div>
+					<div class="row">
+						<input type="submit" value="Add Favorite" ng-disabled="favorite_form.$invalid" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<h3>Your favorites:</h3>
+		<div ng-repeat="portfolio in favorites" >
+			<div class="thumbnail">
+				<h4 ng-bind="portfolio.title"></h4>
+				<img ng-src="images/{{portfolio.imageurl}}" alt="{{portfolio.title}}" />
+			</div>
+		</div>
+		<p>You have picked {{favorites.length}} photos so far!</p>
+	</aside>
+	<main>
+		<div ng-repeat="portfolio in portfolios" >
+			<article class="panel" ng-show="getPickedStatus($index)">
+				<div class="panel-heading"> 
+					<a href="index.html#/portfolio/{{$index}}">{{portfolio.title}}</a>
+					<span class="id">- Id #{{$index + 1}}</span>
+				</div>
+				<div class="panel-body">
+					<img ng-src="images/{{portfolio.imageurl}}" alt="{{portfolio.title}}" />
+				</div>
+			</article>
+		</div>
+	</main>
+</div>
